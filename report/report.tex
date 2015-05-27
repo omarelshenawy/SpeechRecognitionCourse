@@ -14,11 +14,14 @@ Neural networks have always been an attractive area of research since 1960. The 
 
 Deep Learning is the new trend in Machine Learning field. Recently, there has been many applications that uses Deep Learning. Training these deep networks is very expensive computationally, they require heavy computations on the GPU, and so far, several frameworks that facilitate training Deep Neural Networks (DNN) and Convolutional Neural Networks (CNN) ---a deep network that uses Convolutional filters--- have been developed by many research labs around the world. CNNs are usually very popular with the computer vision applications.
 
-Recently, DNNs and CNNs have been applied to the field of speech recognition with very promising results. In this work, we experiment with CNNs and apply them to a small scope of acoustic modeling which is phoneme classification, using a part of the TIMIT dataset due to the expensive nature of training CNNs. We use the CNN training library, Caffe to train our network. Since Caffe is intended for training images, we will train on spectrograms i.e. images of FFT of the phonemes. We will base our work on the architecture described in \cite{sainath2013deep}.
+Recently, DNNs and CNNs have been applied to the field of speech recognition with very promising results. CNNs have the ability to reduce spectral variations and model spectral correlations which exist in signals, therefore CNNs are a more effective model for speech compared to DNNs \cite{sainath2013deep}. In this work, we experiment with CNNs and apply them to a small scope of acoustic modeling which is phoneme classification, using a part of the TIMIT dataset due to the expensive nature of training CNNs. We use the CNN training library, Caffe to train our network. Since Caffe is intended for training images, we will train on spectrograms i.e. images of FFT of the phonemes. We will base our work on the architecture described in \cite{sainath2013deep}.
 
 \chapter{Related Work}
+There has been many approaches for speech recognition with Neural Networks. The classical approach was always to combine Hidden Markov Models (HMMs) with NNs, such as \cite{robinson1994application}. This approach has been very successful and popular. Recently, there has been attempts to remove the need for HMMs. \cite{graves2013speech} used Recurrent Neural Networks (RNNs) with good results for speech recognition and has yielded promising result. \cite{graves2014towards} have done similar work with RNNs.
 
+\cite{sainath2013deep} uses HMMs in their model, however, we only build a CNN based on their architecture, and since we do not do speech recognition, there is no need for an HMM.
 
+There has been attempts to use both DNNs and CNNs in speech recognition, however, DNNs have difficulty modeling transitional variance within speech signals, which exists due to difference in speaking styles \cite{lecun1995convolutional}. Various speaker adaptation techniques are required to reduce this variation. Therefore, we have preferred to use CNNs for this task, since TIMIT consists of a wide range of speakers.
 
 \chapter{Methodology}
 
