@@ -1,0 +1,10 @@
+/home/haseeb/tmp/speech/fcjf0/sa1.wav
+/home/haseeb/tmp/speech/fcjf0/si1657.wav
+/home/haseeb/tmp/speech/fcjf0/sx397.wav
+/home/haseeb/tmp/speech/fcjf0/sx307.wav
+/home/haseeb/tmp/speech/fcjf0/sx37.wav
+/home/haseeb/tmp/speech/fcjf0/sx217.wav
+/home/haseeb/tmp/speech/fcjf0/sa2.wav
+/home/haseeb/tmp/speech/fcjf0/si648.wav
+/home/haseeb/tmp/speech/fcjf0/sx127.wav
+/home/haseeb/tmp/speech/fcjf0/si1027.wav
