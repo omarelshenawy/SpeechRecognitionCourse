@@ -1,29 +1,59 @@
 \documentclass[a4paper,12pt]{article}
-\usepackage{subfig}
 \usepackage{url}
 \usepackage{epsfig}
 \usepackage{graphics}
 \usepackage{fancyhdr}
-\usepackage{amsmath}
+% -- algoooo
+\usepackage[]{algorithm}
+\usepackage{float}
+\usepackage{algpseudocode}
+\usepackage{setspace}
 
+\usepackage{hyperref}
+\graphicspath{{pictures/}}
+
+
+\title{Training a Convolutional Neural Network for Phonemes Classification}
+\author{\hspace*{-0.5cm}
+\begin{tabular}{cccc}
+Mohamed Abdulaziz Ali Haseeb & Omar El-shenawy \\
+moaah@kth.se & omares@kth.se %\\
+%\includegraphics[width=0.13\linewidth]{Alan_Turing_photo} & 
+%\includegraphics[width=0.13\linewidth]{Alan_Turing_photo}
+\end{tabular}} 
+% Normally there will not be any pictures but we want
+% these so that we can connect faces to names in the course
+% We also want birthdates so that we can tell people with the same
+% name apart
+\date{}
+
+\pagestyle{fancy}
+\setlength{\headheight}{15pt}
+\fancyhf{}
+\lhead{DT2118 2015} % DO NOT REMOVE!!!!
+\rhead{M. Haseeb, Omar El-shenawy} %% UPDATE WITH YOUR NAMES
 
 \begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+\begin{abstract}
+In this report present our work on training a deep convolutional neural network CNN for phoneme classification acoustic task. CNNs with different configurations are trained and compared.
+\end{abstract}
+\clearpage
 \section{Introduction}
 
-Neural networks have always been an attractive area of research since 1960. The attempt at simulating the human brain has always been intriguing. Since the first perceptron model, Neural Networks have evolved in many ways, in which layers of perceptrons grew wider and deeper. However, until recently, it was only possible to train shallow networks, because of the vanishing gradient problem. The vanishing gradient is a phenomena where the error information starts to decay when propagated through many layers, and therefore the learning process is no longer doable. A remedy was made by Hinton\cite{hinton2006reducing}, in which the network is trained a layer at a time, instead of trying to train all layers at once.
-
-Deep Learning is the new trend in Machine Learning field. Recently, there has been many applications that uses Deep Learning. Training these deep networks is very expensive computationally, they require heavy computations on the GPU, and so far, several frameworks that facilitate training Deep Neural Networks (DNN) and Convolutional Neural Networks (CNN) ---a deep network that uses Convolutional filters--- have been developed by many research labs around the world. CNNs are usually very popular with the computer vision applications.
-
-Recently, DNNs and CNNs have been applied to the field of speech recognition with very promising results. CNNs have the ability to reduce spectral variations and model spectral correlations which exist in signals, therefore CNNs are a more effective model for speech compared to DNNs \cite{sainath2013deep}. In this work, we experiment with CNNs and apply them to a small scope of acoustic modeling which is phoneme classification, using a part of the TIMIT dataset due to the expensive nature of training CNNs. We use the CNN training library, Caffe to train our network. Since Caffe is intended for training images, we will train on spectrograms i.e. images of FFT of the phonemes. We will base our work on the architecture described in \cite{sainath2013deep}.
+Neural networks have always been an attractive area of research since 1960. The attempt at simulating the human brain has always been intriguing. Since the first perceptron model, Neural Networks have evolved in many ways, in which layers of perceptrons grew wider and deeper. However, until recently, it was only possible to train shallow networks, because of the vanishing gradient problem. The vanishing gradient is a phenomena where the error information starts to decay when propagated through many layers, and therefore the learning process is no longer doable. A remedy was made by Hinton\cite{hinton2006reducing}, in which the network is trained a layer at a time, instead of trying to train all layers at once.\\\\
+Deep Learning is the new trend in Machine Learning field. Recently, there has been many applications that uses Deep Learning. Training these deep networks is very expensive computationally, they require heavy computations on the GPU, and so far, several frameworks that facilitate training Deep Neural Networks (DNN) and Convolutional Neural Networks (CNN) ---a deep network that uses Convolutional filters--- have been developed by many research labs around the world. CNNs are usually very popular with the computer vision applications.\\\\
+Recently, DNNs and CNNs have been applied to the field of speech recognition with very promising results. CNNs have the ability to reduce spectral variations and model spectral correlations which exist in signals, therefore CNNs are a more effective model for speech compared to DNNs \cite{sainath2013deep}. In this work, we experiment with CNNs and apply them to a small scope of acoustic modelling which is phoneme classification, using part of the TIMIT dataset due to the expensive nature of training CNNs. We use the CNN training library, Caffe to train our network. We will train on spectrograms i.e. images of FFT of the phonemes. We will base our work on the architecture described in \cite{sainath2013deep}.
 
 \section{Related Work}
-There has been many approaches for speech recognition with Neural Networks. The classical approach was always to combine Hidden Markov Models (HMMs) with NNs, such as \cite{robinson1994application}. This approach has been very successful and popular. Recently, there has been attempts to remove the need for HMMs. \cite{graves2013speech} used Recurrent Neural Networks (RNNs) with good results for speech recognition and has yielded promising result. \cite{graves2014towards} have done similar work with RNNs.
-
-\cite{sainath2013deep} uses HMMs in their model, however, we only build a CNN based on their architecture, and since we do not do speech recognition, there is no need for an HMM.
-
+There has been many approaches for speech recognition with Neural Networks. The classical approach was always to combine Hidden Markov Models (HMMs) with NNs, such as \cite{robinson1994application}. This approach has been very successful and popular. Recently, there has been attempts to remove the need for HMMs. \cite{graves2013speech} used Recurrent Neural Networks (RNNs) with good results for speech recognition and has yielded promising result. \cite{graves2014towards} have done similar work with RNNs.\\\\
+\cite{sainath2013deep} uses HMMs in their model, however, we only build a CNN based on their architecture, and since we do not do speech recognition, there is no need for an HMM.\\\\
 There has been attempts to use both DNNs and CNNs in speech recognition, however, DNNs have difficulty modeling transitional variance within speech signals, which exists due to difference in speaking styles \cite{lecun1995convolutional}. Various speaker adaptation techniques are required to reduce this variation. Therefore, we have preferred to use CNNs for this task, since TIMIT consists of a wide range of speakers.
 
 \section{Methodology}
+\input{method.tex}
 
 \section{Experimentation and Results}
 
