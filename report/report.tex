@@ -52,11 +52,21 @@ There has been many approaches for speech recognition with Neural Networks. The 
 \cite{sainath2013deep} uses HMMs in their model, however, we only build a CNN based on their architecture, and since we do not do speech recognition, there is no need for an HMM.\\\\
 There has been attempts to use both DNNs and CNNs in speech recognition, however, DNNs have difficulty modeling transitional variance within speech signals, which exists due to difference in speaking styles \cite{lecun1995convolutional}. Various speaker adaptation techniques are required to reduce this variation. Therefore, we have preferred to use CNNs for this task, since TIMIT consists of a wide range of speakers.
 
-\section{Methodology}
+\section{Method}
 \input{method.tex}
 
-\section{Experimentation and Results}
+\subsection{Implementation}
+\label{sec:impl}
+\input{implementation.tex}
 
+ 
+\section{Experimentation and Results}
+we tried different networks 
+different data sets (train/validation split)
+results, including training time
+in a table
+\section{Conclusion}
+why we did not get good results
 
 \bibliographystyle{acm}
 \bibliography{library}
