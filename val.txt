@@ -1,0 +1,4 @@
+/home/omar/Documents/KTH/1.4/Speech/spoken_numbers_subset/1/1_Tom_140.wav.png 0
+/home/omar/Documents/KTH/1.4/Speech/spoken_numbers_subset/1/1_Karen_140.wav.png 0
+/home/omar/Documents/KTH/1.4/Speech/spoken_numbers_subset/0/0_Fred_140.wav.png 1
+/home/omar/Documents/KTH/1.4/Speech/spoken_numbers_subset/0/0_Samantha_140.wav.png 1
