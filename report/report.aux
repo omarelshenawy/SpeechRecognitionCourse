@@ -28,6 +28,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}}
 \citation{graves2014towards}
 \citation{sainath2013deep}
+\citation{NIPS2012_4824}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Method}{3}{section.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Overall setup}{3}{subsection.3.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Feature representation}{3}{subsection.3.2}}
@@ -36,21 +37,33 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Evaluation}{4}{subsection.3.4}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Dataset}{4}{section.4}}
 \newlabel{sec:spect}{{4}{4}{Dataset}{section.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Best performing network architecture, it follows after AlexNet.}}{5}{figure.1}}
+\newlabel{fig:net}{{1}{5}{Best performing network architecture, it follows after AlexNet}{figure.1}{}}
 \citation{pannous}
 \citation{digits}
 \citation{caffe}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Spectrogram of phoneme \textbf  {ao}}}{5}{figure.1}}
-\newlabel{fig:spec1}{{1}{5}{Spectrogram of phoneme \textbf {ao}}{figure.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Spectrogram of phoneme \textbf  {sh}}}{5}{figure.2}}
-\newlabel{fig:spec2}{{2}{5}{Spectrogram of phoneme \textbf {sh}}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Spectrogram of phoneme \textbf  {ao}}}{6}{figure.2}}
+\newlabel{fig:spec1}{{2}{6}{Spectrogram of phoneme \textbf {ao}}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Spectrogram of phoneme \textbf  {sh}}}{6}{figure.3}}
+\newlabel{fig:spec2}{{3}{6}{Spectrogram of phoneme \textbf {sh}}{figure.3}{}}
 \citation{mapping}
 \citation{mapping}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Experiments and Results}{6}{section.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Implementation}{6}{subsection.5.1}}
-\newlabel{sec:impl}{{5.1}{6}{Implementation}{subsection.5.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Experiments}{6}{subsection.5.2}}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Mapping the 61 original TIMIT phonemes(left) into 39 phonemes(right) as suggested in \cite  {mapping}}}{6}{table.1}}
-\newlabel{table:mapping}{{1}{6}{Mapping the 61 original TIMIT phonemes(left) into 39 phonemes(right) as suggested in \cite {mapping}}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experiments and Results}{7}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Implementation}{7}{subsection.5.1}}
+\newlabel{sec:impl}{{5.1}{7}{Implementation}{subsection.5.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Experiments}{7}{subsection.5.2}}
+\newlabel{sec:experiments}{{5.2}{7}{Experiments}{subsection.5.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Mapping the 61 original TIMIT phonemes(left) into 39 phonemes(right) as suggested in \cite  {mapping}}}{7}{table.1}}
+\newlabel{table:mapping}{{1}{7}{Mapping the 61 original TIMIT phonemes(left) into 39 phonemes(right) as suggested in \cite {mapping}}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces  Details of different experiments. Columns from left to right: experiment code-name, percentage of validation split, number of phonemes used and the regions included, number of nodes in different Convolutional layers, number of nodes in Fully Connected layers, Validation Accuracy and number of Epochs of the training.}}{8}{table.2}}
+\newlabel{table:results}{{2}{8}{Details of different experiments. Columns from left to right: experiment code-name, percentage of validation split, number of phonemes used and the regions included, number of nodes in different Convolutional layers, number of nodes in Fully Connected layers, Validation Accuracy and number of Epochs of the training}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces  Error results on unseen test dataset.}}{8}{table.3}}
+\newlabel{table:unseen}{{3}{8}{Error results on unseen test dataset}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Training error, Validation error and Accuracy for each epoch of training the AlexNet on two classes.}}{9}{figure.4}}
+\newlabel{fig:twoClass}{{4}{9}{Training error, Validation error and Accuracy for each epoch of training the AlexNet on two classes}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Training error, Validation error and Accuracy for each epoch of training the best model on all 39 classes.}}{9}{figure.5}}
+\newlabel{fig:best}{{5}{9}{Training error, Validation error and Accuracy for each epoch of training the best model on all 39 classes}{figure.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion and Conclusions}{9}{section.6}}
 \bibstyle{acm}
 \bibdata{library}
 \bibcite{caffe}{1}
@@ -60,8 +73,8 @@
 \bibcite{graves2014towards}{5}
 \bibcite{graves2013speech}{6}
 \bibcite{hinton2006reducing}{7}
-\bibcite{lecun1995convolutional}{8}
-\bibcite{mapping}{9}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion and Conclusions}{7}{section.6}}
-\bibcite{robinson1994application}{10}
-\bibcite{sainath2013deep}{11}
+\bibcite{NIPS2012_4824}{8}
+\bibcite{lecun1995convolutional}{9}
+\bibcite{mapping}{10}
+\bibcite{robinson1994application}{11}
+\bibcite{sainath2013deep}{12}

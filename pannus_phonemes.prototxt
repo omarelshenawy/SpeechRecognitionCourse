@@ -8,10 +8,10 @@ layer {
   }
   transform_param {
     scale: 0.00390625
-    mean_file: "/home/omar/.digits/jobs/20150529-184144-3731/mean.binaryproto"
+    mean_file: "/home/omar/.digits/jobs/20150530-144845-0fb9/mean.binaryproto"
   }
   data_param {
-    source: "/home/omar/.digits/jobs/20150529-184144-3731/train_db"
+    source: "/home/omar/.digits/jobs/20150530-144845-0fb9/train_db"
     batch_size: 8
     backend: LMDB
   }
@@ -26,10 +26,10 @@ layer {
   }
   transform_param {
     scale: 0.00390625
-    mean_file: "/home/omar/.digits/jobs/20150529-184144-3731/mean.binaryproto"
+    mean_file: "/home/omar/.digits/jobs/20150530-144845-0fb9/mean.binaryproto"
   }
   data_param {
-    source: "/home/omar/.digits/jobs/20150529-184144-3731/val_db"
+    source: "/home/omar/.digits/jobs/20150530-144845-0fb9/val_db"
     batch_size: 1
     backend: LMDB
   }
@@ -311,6 +311,12 @@ layer {
       type: "constant"
     }
   }
+}
+layer {
+  name: "prob"
+  type: "Softmax"
+  bottom: "fc8"
+  top: "prob"
 }
 layer {
   name: "loss"

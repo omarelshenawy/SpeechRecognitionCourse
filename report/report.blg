@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report.aux
+The style file: acm.bst
+Database file #1: library.bib
+Warning--to sort, need author or key in pannous
+Warning--to sort, need author or key in digits
+Warning--to sort, need author or key in caffe
+You've used 12 entries,
+            2253 wiz_defined-function locations,
+            597 strings with 5873 characters,
+and the built_in function-call counts, 4109 in all, are:
+= -- 412
+> -- 140
+< -- 0
++ -- 59
+- -- 46
+* -- 274
+:= -- 596
+add.period$ -- 34
+call.type$ -- 12
+change.case$ -- 56
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 169
+empty$ -- 380
+format.name$ -- 46
+if$ -- 920
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 8
+newline$ -- 60
+num.names$ -- 20
+pop$ -- 80
+preamble$ -- 1
+purify$ -- 44
+quote$ -- 0
+skip$ -- 139
+stack$ -- 0
+substring$ -- 307
+swap$ -- 61
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 48
+warning$ -- 3
+while$ -- 37
+width$ -- 14
+write$ -- 116
+(There were 3 warnings)

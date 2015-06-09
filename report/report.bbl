@@ -1,0 +1,67 @@
+\begin{thebibliography}{10}
+
+\bibitem{caffe}
+Caffe deep learning framework.
+\newblock \url{http://caffe.berkeleyvision.org/}.
+
+\bibitem{digits}
+Nvidia® digits™ – interactive deep learning gpu training system.
+\newblock \url{https://developer.nvidia.com/digits}.
+
+\bibitem{pannous}
+Speech recognition with bvlc caffe.
+\newblock \url{https://github.com/pannous/caffe-speech-recognition}.
+
+\bibitem{timit}
+{\sc Garofolo, J., et~al.}
+\newblock Timit acoustic-phonetic continuous speech corpus.
+\newblock \url{https://catalog.ldc.upenn.edu/LDC93S1}.
+
+\bibitem{graves2014towards}
+{\sc Graves, A., and Jaitly, N.}
+\newblock Towards end-to-end speech recognition with recurrent neural networks.
+\newblock In {\em Proceedings of the 31st International Conference on Machine
+  Learning (ICML-14)\/} (2014), pp.~1764--1772.
+
+\bibitem{graves2013speech}
+{\sc Graves, A., Mohamed, A.-R., and Hinton, G.}
+\newblock Speech recognition with deep recurrent neural networks.
+\newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE
+  International Conference on\/} (2013), IEEE, pp.~6645--6649.
+
+\bibitem{hinton2006reducing}
+{\sc Hinton, G.~E., and Salakhutdinov, R.~R.}
+\newblock Reducing the dimensionality of data with neural networks.
+\newblock {\em Science 313}, 5786 (2006), 504--507.
+
+\bibitem{NIPS2012_4824}
+{\sc Krizhevsky, A., Sutskever, I., and Hinton, G.~E.}
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems 25},
+  F.~Pereira, C.~Burges, L.~Bottou, and K.~Weinberger, Eds. Curran Associates,
+  Inc., 2012, pp.~1097--1105.
+
+\bibitem{lecun1995convolutional}
+{\sc LeCun, Y., and Bengio, Y.}
+\newblock Convolutional networks for images, speech, and time series.
+\newblock {\em The handbook of brain theory and neural networks 3361\/} (1995),
+  310.
+
+\bibitem{mapping}
+{\sc Lee, K.~F., and Hon, H.~W.}
+\newblock Speaker-independent phone recognition using hidden markov models.
+\newblock {\em IEEE Transactions on Audio Speech \& Language Processing 37\/}
+  (1989), 1641--1648.
+
+\bibitem{robinson1994application}
+{\sc Robinson, A.~J.}
+\newblock An application of recurrent nets to phone probability estimation.
+\newblock {\em Neural Networks, IEEE Transactions on 5}, 2 (1994), 298--305.
+
+\bibitem{sainath2013deep}
+{\sc Sainath, T.~N., Mohamed, A.-r., Kingsbury, B., and Ramabhadran, B.}
+\newblock Deep convolutional neural networks for lvcsr.
+\newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2013 IEEE
+  International Conference on\/} (2013), IEEE, pp.~8614--8618.
+
+\end{thebibliography}
