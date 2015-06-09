@@ -55,18 +55,22 @@ There has been attempts to use both DNNs and CNNs in speech recognition, however
 \section{Method}
 \input{method.tex}
 
+\section{Dataset}\label{sec:spect}
+\input{dataset.tex}
+
+\section{Experiments and Results}
 \subsection{Implementation}
 \label{sec:impl}
 \input{implementation.tex}
-
- 
-\section{Experimentation and Results}
+\subsection{Experiments}
 we tried different networks 
 different data sets (train/validation split)
 results, including training time
 in a table
-\section{Conclusion}
-why we did not get good results
+\section{Discussion and Conclusions}
+why we did not get good results\\
+is it because spectrograms of phones are small and does not capture enough variations that differentiate the different phone classes (Google used words spectrograms).\\
+Network size:
 
 \bibliographystyle{acm}
 \bibliography{library}

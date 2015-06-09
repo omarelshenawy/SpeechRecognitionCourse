@@ -1,5 +1,6 @@
-spectrogams were generated using Pannous script
-We used caffe a c library
-wrapped by nvidia digits
-using a machine with GPU with 1600 cores, rented from Amazon
+The Timit corpus contains 6300 \textbf{wav} files corresponding to the 6300 sentences uttered by the 630 different speakers. The \textbf{Sndfile} from \textbf{scikits.audiolab} library is used to read the \textbf{wav} files. Using the phones time alignment information, the frames of each phoneme are extracted and saved as \textbf{wav} files, resulting a \textbf{wav} for each phoneme. The \textbf{wav} files are then converted into spectrogram images using a script provided by \cite{pannous}.\\\\
+
+We used caffe a c library\\
+wrapped by nvidia digits\\
+using a machine with GPU with 1600 cores, rented from Amazon\\
 testing was done with pycaffe
