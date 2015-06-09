@@ -1,6 +1,2 @@
 The Timit corpus contains 6300 \textbf{wav} files corresponding to the 6300 sentences uttered by the 630 different speakers. The \textbf{Sndfile} from \textbf{scikits.audiolab} library is used to read the \textbf{wav} files. Using the phones time alignment information, the frames of each phoneme are extracted and saved as \textbf{wav} files, resulting a \textbf{wav} for each phoneme. The \textbf{wav} files are then converted into spectrogram images using a script provided by \cite{pannous}.\\\\
-
-We used caffe a c library\\
-wrapped by nvidia digits\\
-using a machine with GPU with 1600 cores, rented from Amazon\\
-testing was done with pycaffe
+The CCN network was built and trained using the NVIDIA DIGITS deep learning system \cite{digits}. DIGITS provides web based user interfaces that wraps the Caffe deep learning framework \cite{caffe}. The training was done on rented Amazon instance that has a GPU with around 1500 cores. The trained model is then used tested using Caffe pycaffe module, since DIGITS provides poor testing facilities.
