@@ -63,11 +63,21 @@ There has been attempts to use both DNNs and CNNs in speech recognition, however
 \label{sec:impl}
 \input{implementation.tex}
 \subsection{Experiments}
+\label{sec:experiments}
 \input{experiments.tex}
 \section{Discussion and Conclusions}
-why we did not get good results\\
-is it because spectrograms of phones are small and does not capture enough variations that differentiate the different phone classes (Google used words spectrograms).\\
-Network size:
+The method showed good potential in separating two phonemes, this was very beneficial as a proof of concept to show that the model works. However, as seen from results in Table~\ref{table:unseen}, our method was unable to generalize with good performance. However on the validation set, it was able to perform very well. The reasons behind this difference in performance is still unknown to us, however we propose some possible explanations and future work.
+
+\begin{itemize}
+\item The size and complexity of the network. Through all experiments, we were never able to get our model to overfit the data, this suggests that our model might not be complex enough. Another explanation is that the model needs much more epochs to learn.
+
+\item It might be the size of the spectrograms used. The size we used is small and does not capture variations that differentiate the different phone classes, for instance, Google successfully used words spectrograms.
+
+\item The representation of the data, while it was easily separated in the two phoneme case, the representation might not be separable for the 39 phoneme case. Therefore we might want to experiment with raw sound waves.
+
+\item The amount of data used. Unfortunately, due to the expensiveness of the training, we were only able to train only on 39 phonemes for all regions. Most of the literature trains on all 61 phonemes, and tests on a smaller subset (39 phonemes).
+
+\end{itemize}
 
 \bibliographystyle{acm}
 \bibliography{library}
