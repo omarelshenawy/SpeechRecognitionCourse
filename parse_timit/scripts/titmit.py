@@ -1,9 +1,10 @@
 __author__ = 'haseeb'
-from scikits.audiolab import Sndfile
+from scikits.audiolab import Format, Sndfile
 from scikits.audiolab import wavread
 import numpy as np
 import sys
 
+FREQ = 16000
 class Phone():
     def __init__(self, label, frames):
         self.label = label
@@ -30,6 +31,9 @@ class TimitFileReader():
 
     def get_utterance_id(self):
         return self.wav_file_path.split("/")[-1].replace(self.wav_file_ext, "")
+
+    def get_region(self):
+        return self.wav_file_path.split("/")[-3]
 
     def get_number_of_frames(self):
         """
@@ -66,10 +70,21 @@ class TimitFileReader():
             phones.append(Phone(phone_label, all_frames[begin_sample:end_sample+1]))
         return phones
 
+    @staticmethod
+    def save_wav(filename, frames, freq):
+        format_obj = Format('wav')
+        f = Sndfile(filename, 'w', format_obj, 1, freq)
+        f.write_frames(frames)
+        f.close()
 
 if __name__ == '__main__':
-    reader = TimitFileReader("../fcjf0/sa1.wav")
+    reader = TimitFileReader("/home/haseeb/study/resources/corporas/timit/timit/timit/train/dr1/fcjf0/sa1.wav")
     phones = reader.get_phones()
     print len(phones)
+    print reader.get_region()
+    """
+    i = 0
     for phone in phones:
-        print phone.get_label() + " " + str(phone.get_frames())
+        output = "phones_wav/" + phone.get_label()  + str(i) + ".wav"
+        print output
+    """

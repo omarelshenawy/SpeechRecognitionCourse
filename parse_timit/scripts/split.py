@@ -13,7 +13,7 @@ conv_test_list = "/home/haseeb/tmp/parse_timit/converted/test_list.txt"
 phones_list = ["aa","ae","ah","ao","aw","ax","ax-h","axr","ay","b","bcl","ch","d","dcl","dh","dx","eh","el","em","en","epi","eng","er","ey","f","g","gcl","h#","hh","hv","ih","ix","iy","jh","k","kcl","l","m","n","ng","nx","ow","oy","p","pau","pcl","q","r","s","sh","t","tcl","th","uh","uw","ux","v","w","y","z","zh"]
 
 Fs=16000
-NFFT=128
+NFFT=1024
 noverlap=64
 
 train_file_list_file = open(test_file_list, 'r')
